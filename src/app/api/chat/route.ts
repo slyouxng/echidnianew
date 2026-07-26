@@ -12,7 +12,7 @@ export async function POST(request: Request) {
     const { messages } = await request.json();
 
     const completion = await openai.chat.completions.create({
-      model: 'stephanieyoung-2e57/Meta-Llama-3.1-8B-Instruct-Reference-echidnatogether-33c244e5',
+      model: 'stephanieyoung_2e57/Meta-Llama-3.1-8B-Instruct-Reference-echidnatogether-33c244e5',
       messages,
       stream: false,
     });
